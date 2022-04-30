@@ -1,0 +1,39 @@
+/* ORDER_NO_5 */
+/* this media query is used for below 1280 screen widths */
+@media only screen and (max-width: 1200px) {
+    .cards {
+        /* the center alignment of our cards are set to zero in this width query */
+        margin-right: 0;
+        /* column spacing is set  */
+        column-gap: 1.4em;
+        /* row spacing is set  */
+        row-gap: 1.4em;
+        /* margin are spaced equally */
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .Triology>.btn,
+    .Rage>.btn,
+    .btn,
+    .Ebtn {
+        /* button alignment */
+        bottom: 0;
+    }
+
+    .card {
+        /* all normal cards are set to maximum */
+        width: 100%;
+    }
+
+    .Endcard {
+        /* Endgame card width is increases so that it occupies half greater space than other cards */
+        width: 45vw;
+    }
+
+    .Endcard>img {
+        /* endgame image is set to 100% so that it may container whole space */
+        width: 100%;
+    }
+
+}

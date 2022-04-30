@@ -1,0 +1,74 @@
+/* ORDER_NO_2 */
+* {
+    margin: 0;
+}
+
+ /* header container is the main parent of the whole navigation bar at the top */
+.header {
+    /* I have made this parent div a flex container so that it reman easy to place and align items in the header */
+
+    display: flex;
+    /*space between is used to place space between every element along the row axis */
+    justify-content: space-between;
+    /* align items center is used to align the content of the header along column axis  */
+    align-items: center;
+    background: rgb(30, 144, 255);
+    color: white;
+    /* 1rem padding is set so that the content of header is got spaced from  inside */
+    padding: 1rem;
+    /* 1rem unit is used so set the value of our padding equal to the font size of the root element html */
+    /* this unit is useful to remain responsive  */
+}
+
+.inner {
+    /* inner class is used to taget only login and register part of our header they have the some work logically so they are seperated from others and are together */
+    display: inline-block;
+    /* inline block is displayed so that other element also float in same line */
+    margin-left: 1rem;
+}
+
+a {
+    /* decoration none is used to clear all default decorations of anchor tag */
+    text-decoration: none;
+    color: white;
+    /* nunuto sans font is imported from google fonts */
+    font-family: 'Nunito Sans',
+        sans-serif;
+}
+
+.logo {
+    /* .logo is targeting the heading part of our header  */
+    font-family: 'Poppins', sans-serif;
+    /* popins font is also imported from google */
+    font-size: 1.5rem;
+    /* space between words is also given so that logo looks more professional */
+    word-spacing: .1rem;
+    /* space between letters is also given so that logo looks more professional */
+    letter-spacing: .19rem;
+}
+
+.p {
+    /* p class is targeting the / thing between login and register it is also displayed inline block so that login and register come in same line in front of each other */
+    display: inline-block;
+}
+
+.search>input {
+    /* this selector refers to the input tag inside the search class div */
+    padding: .3rem;
+    border: none;
+}
+a:hover,.inner:hover{
+    /* this selector is used to change the color of out text when hovered  */
+    color: rgb(179, 255, 255);
+}
+.logo:hover{
+    /* this selector is used to style logo of our page when hovered  */
+    color: aqua;
+    padding:4px;
+    box-shadow: 0 0 10px 10px aliceblue;
+    /* transition is given to all element of 0.6s so it may give beautiful feel */
+    transition: all .6s;
+}
+a{
+    margin: 5px;
+}

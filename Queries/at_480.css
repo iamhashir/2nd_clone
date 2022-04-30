@@ -1,0 +1,49 @@
+/* ORDER_NO_8 */
+
+@media only screen and (max-width: 500px) {
+
+    .cards {
+        /* grid template columns are set to contain only 1 */
+        grid-template-columns: 1fr;
+        /* grid template columns are set to contain only 5 */
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    .Endcard {
+        /* Endcard is set to 100% */
+        width: 100%;
+        /* Endcard height is set to 110 viewport height */
+        height: 110vh;
+        /* Endgame card's row is set to start from 1st and also end at 1st row */
+        grid-area: 1/1/2/1;
+        /* Endgame card's column is set to start from 2nd and  end at 1st column */
+    }
+
+    .card {
+        /* width is set to 100% */
+        width: 100%;
+        /* all cards are aligned centred */
+        justify-self: center;
+    }
+
+    .Gunmen {
+
+        grid-area: 2/1/3/1;
+    }
+    
+    .Triology {
+        /* Endgame card's row is set to start from 3rd and end on 1st end column start on 1st and end at 1st column */
+        grid-area: 3/1;
+    }
+    
+    .Predators {
+        grid-area: 4/1;
+        /* Endgame card's row is set to start and end on 4th and column start and end on 1st column */
+    }
+    
+    .Rage {
+        grid-area: 5/1;
+        /* Endgame card's row is set to start and end on 5th and column start and end on 1st column */
+    }
+    
+}

@@ -1,0 +1,65 @@
+/* ORDER_NO_6 */
+
+
+@media only screen and (max-width: 1024px) {
+
+    .cards {
+        /* column are set to container only 2 and first card to be greater than all */
+        grid-template-columns: 2fr 1fr;
+        /* rows are set to 4 and also to auto adjust */
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .card {
+        /* All normal cards should be centre aligned */
+        justify-self: center;
+    }
+
+    .Triology>.btn {
+        /* button alignment */
+        bottom: 0;
+
+    }
+
+    .Endcard {
+        /* Endcard is set to 100% */
+        width: 100%;
+        /* Endgame card's row is set to start from 1st and also end at 1st row */
+        grid-area: 1/1/3/2;
+        /* Endgame card's column is set to start from 3rd and  end at 2nd column */
+    }
+
+    .card {
+        width: 30vmax;
+        /* vmax unit is used to contain the maximum 30 % of width */
+    }
+
+    .Gunmen {
+        /* Gunmen card's row is set to start from 1st and  end at 2nd row
+        card's column is set to start from 1st and  end at 3rd column */
+        grid-area: 1/2/1/3;
+    }
+
+    .Triology {
+        /* Trilogy card's row and column is set to start from 2nd and also end at 2nd row and column*/
+        grid-area: 2/2/2/2;
+    }
+
+    .Predators {
+        /* card's row is set to start from 3rd and  end at 2nd row */
+        grid-area: 3/2/3/2;
+        /* card's column is set to start from 3rd and  end at 2nd column  */
+    }
+
+    .Rage {
+        /* card's row is set to start from 4th and end at 2nd row */
+        grid-area: 4/2/4/2;
+        /* card's column is set to start from 4th and  end at 2nd column  */
+    }
+
+    button {
+        /* the max font size is set to 1.3% */
+        font-size: 1.3vmax;
+    }
+
+}

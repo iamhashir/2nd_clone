@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./styling/header.css" />
+  <link rel="stylesheet" href="./styling/cards.css" />
+  <link rel="stylesheet" href="./Queries/above_1280.css">
+  <link rel="stylesheet" href="./Queries/at_1280.css">
+  <link rel="stylesheet" href="./Queries/at_1024.css">
+  <link rel="stylesheet" href="./Queries/at_800.css">
+  <link rel="stylesheet" href="./Queries/at_480.css"> 
+</head>
+
+<body>
+
+  <!-- This div is the main wrapper of our whole page -->
+  <div class="main">
+    <!-- Header div is used to sum up all elements of our header such as logo , heading nav-links -->
+    <div class="header">
+
+      <h1 class="logo">What's On</h1>
+      <!-- The search div is used for wrapping and correctly aligning our search bar -->
+      <div class="search">
+        <input type="text" class="in" placeholder="Search..." />
+      </div>
+      <!-- All nav-links are wrapped inside extras div so that they give us a flexible layout -->
+      <div class="extras">
+        <a href="">Movies</a>
+        <a href="">Tv</a>
+        <div class="inner">
+          <!-- Here login/Register is used in another division because these two links are related to each other than others so it makes sense to remain close to each other -->
+          <a href="">Login</a>
+          <p class="p">/</p>
+          <a href="">Register</a>
+        </div>
+      </div>
+    </div>
+    <!-- Now comes the second division this contains all the content of our page that include all cards -->
+    <div class="content">
+      <!-- Now the card section include two types one is the main card and others are usual cards so they are also further divided -->
+      <div class="cards">
+        <!-- Cards is the parent div which include every card inside our page including the main Endgame card -->
+        <div class="Endgame Endcard">
+          <!-- Endgame card consist of everything which should reside inside our card such as buttons,heading,image -->
+          <img src="./images/avengers.jpg" alt="" />
+          <!-- the heading tag, paragraph tag and button tag are again wrapped inside a div that is because they all work together with each other -->
+
+          <div class="mainCard">
+
+            <h2>Avengers-endgame</h2>
+
+            <p>
+              After the devistating events of avengers infinity war(2018),the universe is in ruins.With the help of
+              remaining allies, the avengers assemble once more in order to reverse thanos'action and
+              restore balance to the universe.
+
+            </p>
+            <!-- The button tag is wrapped inside Ebtn div so that this parent div make easier for the child div to align inside our card -->
+            <div class="Ebtn">
+              <button>More info...</button>
+            </div>
+          </div>
+        </div>
+        <!-- Now comes Gunmen card it is also wrapped in the same way as Endgame card -->
+        <div class="Gunmen card">
+          <!-- Multiple class names are used so that it is easier for css to target tags -->
+
+          <img src="./images/lone-gunmen.jpg" alt="" />
+          <h2>The lone gunmen</h2>
+          <p>
+            The X-files'lone gunmen,investigate crimes and conspiracies, often
+            in a silly,comedic and over the top fashion.
+          </p>
+          <!-- button tag was wrapped inside btn div so that it work easier in Document flow and give us responsiveness through flexbox -->
+          <div class="btn">
+            <button>More info...</button>
+          </div>
+          
+        </div>
+        <div class="Triology card">
+          <!-- Main parent div is Triology and it's children are summed up inside -->
+          <img src="./images/millenium.jpg" alt="" />
+          <h2>Millennium Trilogy</h2>
+          <p>
+            The adventures of journalist Mikael Blomkvist and hacker Lisbeth
+            Salander.</p>
+          </p>
+          <!-- button tag was wrapped inside btn div so that it work easier in Document flow and give us responsiveness through flexbox -->
+          <div class="btn">
+            <button>More info...</button>
+          </div>
+        </div>
+        
+        <div class="Predators card">
+          <!-- Main parent div is Predators and it's children are summed up inside -->
+          <img src="./images/predators.jpg" alt="" />
+          <h2>Predators</h2>
+          <p>
+            A group of elite warriors parachute into an unfamiliar jungle and
+            are hunted by members of merciless alien race
+          </p>
+          <!-- button tag was wrapped inside btn div so that it work easier in Document flow and give us responsiveness through flexbox -->
+          <div class="btn">
+            <button>More info...</button>
+          </div>
+        </div>
+        <div class="Rage card">
+          <!-- Main parent div is Rage and it's children are summed up inside -->
+          <img src="./images/rage.jpg" alt="" />
+          <h2>Rage</h2>
+          <p>
+            When the daughter of a reformed criminal is kclassnapped, he round up
+            his old crew and seeks his own brand of justice
+          </p>
+          <!-- button tag was wrapped inside btn div so that it work easier in Document flow and give us responsiveness through flexbox -->
+          <div class="btn">
+            <button>More info...</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Now comes footer part footer div is not a child of content div but it is the sibling of it -->
+    <div class="footer">
+      <p>Copyright © 2021 What's On</p>
+    </div>
+  </div>
+  </body>
+
+</html>

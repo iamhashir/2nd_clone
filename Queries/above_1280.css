@@ -1,0 +1,22 @@
+/* ORDER_NO_4 */
+/* this media query targets the width above 1280px */
+@media only screen and (min-width:1200px) {
+
+    /* at 1200 pixels width this setting should be applied */
+    .card>p {
+
+        /* the width of every card is set to 100% */
+        width: 100%;
+    }
+/* the position of different buttons are set */
+    .Triology>.btn,
+    .Gunmen>.btn,
+    .btn,
+    .Ebtn {
+        bottom: 0;
+    }
+
+    .Rage>.btn {
+        bottom: 0em;
+    }
+}

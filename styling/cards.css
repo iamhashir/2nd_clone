@@ -1,0 +1,160 @@
+/* ORDER_NO_3 */
+
+.card>img {
+    /* this selector is used to target every image available inside card class expect the Endgame image because we will style it differenlt as it os our main card */
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* these three lines of code above are used to center our image inside the container */
+
+    width: 90%;
+}
+
+.Endcard>img {
+
+/* this selector is used to target  image available inside Endgame card we will style our main card differently*/
+
+    width: 100%;
+
+/* width is set to 100% so that it occupies whole space of u=our card container this is set to 100% here because we dont need any centring of image for this card */
+
+}
+
+.card,
+.Endcard {
+
+    background: #ffffff;
+    
+    /* A light box shadow is given so that it may feel like a card */
+    
+    box-shadow: 1px 1px 5px 0 rgba(85, 85, 85, 0.734);
+}
+
+.cards {
+    /* Now the main part is how to align our all cards this was getting more difficult using flexbox so grid is used here so we can have effective control on our cards */
+    display: grid;
+    /* row gap is used to give space along the cards in rows */
+    row-gap: 1.5rem;
+    /*grid template columns is used to set the number of columns of our grid */
+    grid-template-columns:2fr 1fr 1fr;/* by default the columns are set to three and the endgame card is given to fractions of width because it will be the bigger one */
+    /*grid template rows is set to auto so that it arrange rows on its own according to space */
+    grid-template-rows: auto auto;
+    
+    font-family: 'Nunito Sans',
+        sans-serif;
+    /* here also rem is used to have root element's font size value  */
+    margin-top: 1rem;
+    
+    margin-right: 9rem;
+/* cards tag is used as a parent div of our every card */
+}
+
+
+.card {
+    /* card selector is used to target every card inside our page except Endgame card because we need different implementations for it */
+    width: 80%;
+
+    box-sizing: border-box;
+    /* overflow hidden was used so that no matter what nothing flows out of our card container */
+    overflow: hidden;
+}
+
+.Endcard {
+    /* overflow hidden was used so that no matter what nothing flows out of our card container */
+    overflow: hidden;
+    box-sizing: border-box;
+    /* now here viewport width(vw) unit is used so that our width will always be releated to the specified unit(perecentage) of our viewport */
+    width: 31vw;
+    /* Now here the settings are applied to our specific grid element that our endgame card should start from 1st row till 3rd */
+    /* Ending should be on the 3rd row that is because we need our main card(endgame) to be stretched and occupy more space than other cards */
+    grid-row: 1/3;
+    /* And the column should start from 1st row till 2nd */
+    grid-column: 1/2;
+    max-height: 100%;
+    /* justify self means aligning our content along the x axis and we had aligned it to the end so that it remain closer to other cards */
+    justify-self: end;
+    /* justify self means aligning our content along the y axis and we had aligned it to the start so that it shouldn;t stretch to occupy whole height of the container  */
+    align-self: start;
+}
+
+.mainCard {
+    /* main card selector is the Endgame card */
+    width: 34vw;
+}
+
+.Gunmen,
+.Predators {
+    /* Now gunmen and predators cards are used to align seperately  as in the  mentioned brief */
+    justify-self: center;
+
+}
+
+.Rage,
+.Triology {
+    /* Now Rage and Triology cards are also used to align seperately  as in the  mentioned brief */
+    justify-self: start;
+}
+
+.card {
+    /* padding is applied to every avaliable card in the page so it may have some breathing space */
+    padding: 11px;
+}
+.Gunmen {
+    /* Gunmen card column is set tp start from 2nd and end at 3rd */
+    grid-column: 2/3;
+}
+.Triology {
+    /* Gunmen card column is set tp start from 3rd and end at 4th */
+    grid-column: 3/4;
+}
+
+.Predators {
+    /* Gunmen card column is set tp start from 2nd and end at 3rd */
+    grid-column: 2/3;
+}
+
+.Rage {
+    /* Gunmen card column is set tp start from 3rd and end at 4th */
+    grid-column: 3/4;
+}
+
+
+.mainCard>p,
+.card>p {
+    /* font size and padding of all p tags are set here  */
+    font-size: 2vmin;
+    padding: 0 12px;
+}
+
+.Rage>p,
+.Gunmen>p {
+    /* width of rage and gumen p tags are set here  */
+    width: 100%;
+}
+
+.card>h2,
+.mainCard>h2 {
+    /* font size and other settings of all h2 tags are set here  */
+    font-size: 1.2rem;
+    width: 94%;
+    padding: 2px 12px;
+    margin-top: .4em;
+}
+
+.mainCard>h2 {
+    /* font size of maincard h2 tag is set here  */
+    font-size: 1.2rem;
+}
+
+.mainCard {
+    /* body part of our main card which include paragraph heading and button are made flex container so we can have more control */
+    display: flex;
+    /* direction is set to column */
+    flex-direction: column;
+    /* items are aligned to end */
+    align-items: end;
+    /* width is inherited from the parent */
+    width: inherit;
+}
