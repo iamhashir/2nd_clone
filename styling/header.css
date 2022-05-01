@@ -51,15 +51,20 @@ a {
     /* p class is targeting the / thing between login and register it is also displayed inline block so that login and register come in same line in front of each other */
     display: inline-block;
 }
+a{
+    margin: 5px;
+}
 
 .search>input {
     /* this selector refers to the input tag inside the search class div */
     padding: .3rem;
     border: none;
 }
-a:hover,.inner:hover{
+/* ***** HOVERING STATE OF OUR HEADER IS IMPLEMENTED IN THIS SECTION ***** */
+a:hover{
     /* this selector is used to change the color of out text when hovered  */
-    color: rgb(179, 255, 255);
+    color: aqua;
+    transition: .4s all;
 }
 .logo:hover{
     /* this selector is used to style logo of our page when hovered  */
@@ -69,6 +74,7 @@ a:hover,.inner:hover{
     /* transition is given to all element of 0.6s so it may give beautiful feel */
     transition: all .6s;
 }
-a{
-    margin: 5px;
+.header:hover {
+    background: #000;
+    transition: all .5s;
 }

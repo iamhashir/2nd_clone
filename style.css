@@ -1,18 +1,17 @@
-/* ********This is the starting of the stylesheet******* */
-/* the order of stylesheet is below: */
+/* ********This is the starting of the STYLESHEET******* */
+/* the order of stylesheets is below: */
 /*      
         1. style.css 
         2. Header .css
-        3.cards.css 
-        4.content.css 
-        5.above_1280.css 
-        6.at_1280.css 
-        7.at_1024.css 
-        8.at_800.css 
-        9.at_480.css
+        3 .cards.css 
+        4 .above_1280.css 
+        5 .at_1280.css 
+        6 .at_1024.css 
+        7 .at_800.css 
+        8 .at_480.css
 */
 
-/* The order of the stylesheet work accordingly and the styling was also applied according the order */
+/* The order of the stylesheets work accordingly and the styling was also applied according  to the order */
 
 /* STYLESHEET_ORDER_NO_1 */
 
@@ -23,88 +22,130 @@ body {
     background: #eeeeee;
 }
 
-/* * selector is used to default margin and padding settings to 0 of the whole page */
 * {
+    /* * selector is used to default margin and padding settings to 0 of the whole page */
     margin: 0;
     padding: 0;
 }
 
 
 button {
+    /* rem selector is used so that the size of pixels always remain relative to the root element html which gives us responsiveness */
     font-size: .7rem;
     background: #1e90ff;
     color: #fff;
+/* all default settings of button are set to none */
     border: none;
     padding: 5px;
     border-radius: 3px;
     font-size: 1vmax;
+    /* vmax unit is used so that the size of the font never increases from 1 percent vidth */
 }
 
 .btn,
 .Ebtn {
+    /* .btn targets all buttons availiable inside normal cards */
+    /* .Ebtn targets button availiable inside endgame card */
+/* it is displayed as a flexible item so that we can customize its alignment more precisely */
     display: flex;
+    /* it is send to end along x axis */
     justify-content: flex-end;
+    /* it is send to center along y axis */
     align-items: center;
     width: 100%;
     height: 3vmax;
+    /* height is set to remain 3 percent maximun */
     margin: 0;
+    /* position is set to relative so that it remain realitive to its parent and we can also customize its position */
     position: relative;
     padding: 0;
+    /* em unit is used so that it always follows the value of its parent div  */
     bottom: -1em;
-
 }
 
 .btn {
+    /* all button's margin are set to 0 */
     margin: 0;
 }
 
 .Ebtn {
+    /* endgame button's margin is set to 1em */
     margin: 1em;
 }
-
+input:focus {
+    /* setting on focus event is being reset */
+    outline: 5px solid rgba(95, 255, 236, 0.765);
+    /* transition is given so that it may gie smooth animation */
+    transition: .3s all;
+}
 .footer {
-    /* width: 100vw; */
-    /* background: #000; */
+/* fotter is designed in a cool manner with again the help of flex box */
     display: flex;
+/*    it is aligned in center alogn both horizontal and vertical axis */
     justify-content: center;
     align-items: center;
-    height: 16vh;
+/* height is limited to 16vh */
+    height: 16vmin;
 }
+/* ***** HOVERING STATE OF OUR cards IS IMPLEMENTED IN THIS SECTION ***** */
 
 button:hover {
     background: #44a2ff;
 }
 
 p:hover {
+    /* the opacity of paragraph tags are being animated here */
     opacity: 1;
-    transition: 2s all;
+    /* 0.7s transition is set on hovering p tag */
+    transition: .7s all;
 }
+.card h2:hover{
+    
+    /* the opacity of h2 tags on hover are being animated here */
+    opacity: 1;
+    margin-left: 12px;
+    /* the heading tag is scaled on hover */
+    transform:scale(1.1,1.1);
+    /* 0.7s transition is set on hovering h2 tag */
+    transition: .7s all;
+    
+}
+
 
 .card:hover,
 .Endcard:hover {
+    /* hpvering on main card and simple cards are being set here */
     background: #000;
+    /* border is set when hover */
     border: 1.5px dotted aliceblue;
     color: #fff;
+    /* 0.3s transition is set on hovering card tag */
     transition: all .3s;
+    /* beautiful scaling animation is applied on card */
+    transform: scale(1.06,1.06);
 }
 
 img:hover {
-    border-bottom: 1.5px solid aqua;
+    /* image hover behavior is being applied here */
+    border-bottom: 1.5px solid aqua;    
+    /* 0.5s transition is set on hovering image */
     transition: all .5s;
-    margin-bottom: 12px;
-}
+    /* 5px on x axis and 5 on y axis out image is being moved upon hover */
+    transform: translate(5px,5px);
+} 
 
-.header:hover{
-    background: #000;
-    transition: all .5s;
-}
+
 .footer:hover{
+    /* footer hover behavior is being applied here */
     background: #000;
     color: #fff;
+    /* beautiful border is applied of solid aqua color */
     border: 1px solid aqua;
+    /* 1s transition makes it more interactive */
     transition: 1s all;
 }
 .footer p:hover{
+    /* beautiful padding with the box shadow is also applied  */
     padding:10px;
     box-shadow: 0 0 10px 10px red;
     transition: .1s all;
