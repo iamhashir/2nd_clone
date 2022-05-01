@@ -79,7 +79,7 @@ input:focus {
     transition: .3s all;
 }
 .footer {
-/* fotter is designed in a cool manner with again the help of flex box */
+/* footer is designed in a cool manner with again the help of flex box */
     display: flex;
 /*    it is aligned in center alogn both horizontal and vertical axis */
     justify-content: center;

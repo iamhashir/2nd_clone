@@ -12,8 +12,6 @@
     .Endcard {
         /* Endcard is set to 100% */
         width: 100%;
-        /* Endcard height is set to 110 viewport height */
-        height: 110vh;
         /* Endgame card's row is set to start from 1st and also end at 1st row */
         grid-area: 1/1/2/1;
         /* Endgame card's column is set to start from 2nd and  end at 1st column */
@@ -45,5 +43,7 @@
         grid-area: 5/1;
         /* Endgame card's row is set to start and end on 5th and column start and end on 1st column */
     }
-    
+    .footer{
+        height: 20vh;
+    }
 }
