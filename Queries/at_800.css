@@ -20,8 +20,9 @@
 
     .header:after {
         /* this css styling is used to manage the layout after the content is set to hidden */
-        visibility: visible;
+        /* visibility: visible; */
         content: "Menu";
+        /* overflow: hidden; */
         font-family: 'Nunito Sans',
             sans-serif;
     }
