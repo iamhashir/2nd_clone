@@ -45,5 +45,6 @@
     }
     .footer{
         height: 20vh;
+        /* heiht is being set by 20 percent viewport */
     }
 }
